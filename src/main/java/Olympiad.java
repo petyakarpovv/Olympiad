@@ -8,7 +8,6 @@ public class Olympiad {
         students.add(new Student("Алексей", "Маршалко", "Операторович", Arrays.asList(8, 3, 1, 3)));
         students.add(new Student("Николай", "Филлипов", "Лаптевич", Arrays.asList(5, 2, 7, 4)));
         students.add(new Student("Сергей", "Хохлов", "Настолкович", Arrays.asList(7, 2, 4, 4)));
-
         printWinners(students);
     }
 
@@ -18,7 +17,7 @@ public class Olympiad {
 
         for (int i = students.size(); i > students.size() - 3; i--) {
             Student student = students.get(i - 1);
-            System.out.println(student.getName() + " " + student.getSurname() + " " + getAverage(student.getScore()));
+            System.out.println(student.getName() + " " + student.getSurname() + " " + student.getPatronymic() + " " + getAverage(student.getScore()));
         }
     }
 
