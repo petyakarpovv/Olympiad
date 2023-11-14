@@ -13,7 +13,7 @@ public class Olympiad {
 
     private static void printWinners(List<Student> students) {
         sortStudents(students);
-        System.out.println("Победители Олимпиады: ");
+        System.out.println("Победители Олимпиады:");
 
         for (int i = students.size(); i > students.size() - 3; i--) {
             Student student = students.get(i - 1);
